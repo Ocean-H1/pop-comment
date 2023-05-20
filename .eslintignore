@@ -1,0 +1,4 @@
+# 根据自己需求配置不需要eslint的文件
+node_modules
+dist
+public
