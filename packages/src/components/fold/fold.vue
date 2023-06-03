@@ -37,18 +37,21 @@ const fold = ref(true)
 const isExceeded = ref(false)
 
 const divBox = ref<HTMLDivElement>()
-let observer: ResizeObserver
 
-onMounted(() => {
+let observer: ResizeObserver
+const resizeDom = () => {
   observer = new ResizeObserver(entry => {
     if (divBox.value && fold.value) {
-      // offsetHeight：包括内容可见部分的高度，border，可见的padding，水平方向的scrollbar（如果存在）；不包括margin。
-      // clientHeight：包括内容可见部分的高度，可见的padding；不包括border，水平方向的scrollbar，margin。
-      // scrollHeight：包括内容的高度（可见与不可见），padding（可见与不可见）；不包括border，margin。
+      // offsetHeight：包括内容可见部分的高度，border，可见的padding，水平方向的scrollbar（如果存在）；不包括margin
+      // clientHeight：包括内容可见部分的高度，可见的padding；不包括border，水平方向的scrollbar，margin
+      // scrollHeight：包括内容的高度（可见与不可见），padding（可见与不可见）；不包括border，margin
       isExceeded.value = divBox.value.offsetHeight < divBox.value.scrollHeight
     }
   })
-  observer.observe(divBox.value as any)
+  observer.observe(divBox.value as HTMLDivElement)
+}
+onMounted(() => {
+  resizeDom()
 })
 onUnmounted(() => {
   observer.disconnect()
