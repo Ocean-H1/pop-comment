@@ -1,0 +1,32 @@
+$line: 5 !default;
+
+.p-fold {
+  font-size: 14px;
+  color: inherit;
+  line-height: 20px;
+
+  .text-box {
+    margin-top: 5px;
+    // 对过长的单词进行断词处理，防止文字溢出容器
+    word-wrap: break-word;
+  }
+  .over-hidden {
+    // 弹性盒子模型
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // 设置弹性盒子中子元素的排列方式
+    -webkit-box-orient: vertical;
+    // 限制一个块元素显示的文本行数
+    -webkit-line-clamp: $line;
+  }
+  .action-box {
+    margin-bottom: 5px;
+    .expand-btn {
+      display: inline-block;
+      line-height: 22px;
+      color: var(--p-color-primary);
+      cursor: pointer;
+    }
+  }
+}

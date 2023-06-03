@@ -1,3 +1,3 @@
 import { Plugin } from 'vue'
-
-export default [] as Plugin[]
+import Fold from './fold'
+export default [Fold] as Plugin[]
