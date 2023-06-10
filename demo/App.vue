@@ -5,7 +5,8 @@
 <script setup lang="ts">
 import Page from './components/Page.vue'
 import testFold from './components/test-fold.vue'
-const components = [testFold]
+import testCounter from './components/test-counter.vue'
+const components = [testFold, testCounter]
 </script>
 
 <style scoped></style>

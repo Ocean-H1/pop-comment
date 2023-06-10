@@ -1,3 +1,4 @@
 import { Plugin } from 'vue'
 import Fold from './fold'
-export default [Fold] as Plugin[]
+import Counter from './counter'
+export default [Fold, Counter] as Plugin[]
