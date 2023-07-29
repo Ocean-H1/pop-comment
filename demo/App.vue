@@ -3,10 +3,11 @@
 </template>
 
 <script setup lang="ts">
-import Page from './components/Page.vue'
+import Page from './components/page.vue'
 import testFold from './components/test-fold.vue'
 import testCounter from './components/test-counter.vue'
-const components = [testFold, testCounter]
+import testIcon from './components/test-icon.vue'
+const components = [testFold, testCounter, testIcon]
 </script>
 
 <style scoped></style>
