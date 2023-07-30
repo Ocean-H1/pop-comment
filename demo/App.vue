@@ -8,7 +8,8 @@ import testFold from './components/test-fold.vue'
 import testCounter from './components/test-counter.vue'
 import testIcon from './components/test-icon.vue'
 import testDivider from './components/test-divider.vue'
-const components = [testFold, testCounter, testIcon, testDivider]
+import testAnchor from './components/test-anchor.vue'
+const components = [testFold, testCounter, testIcon, testDivider, testAnchor]
 </script>
 
 <style scoped></style>
