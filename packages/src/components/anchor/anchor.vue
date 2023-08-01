@@ -95,7 +95,7 @@ const d1 = (val: string) => {
 onMounted(() => {
   let container = document.querySelector(props.container) as Element
   observer = new ResizeObserver(entry => {
-    // 在resizeObserber中初始化滚动轴和锚点元素列表 解决异步加载内容时，锚点滚动导航栏不显示的问题
+    // 在resizeObserver中初始化滚动轴和锚点元素列表 => 解决异步加载内容时，锚点滚动导航栏不显示的问题
     if (props.scroll) {
       scroll.value = document.querySelector(props.scroll) as Element
     } else {
