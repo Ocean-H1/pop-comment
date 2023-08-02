@@ -1,8 +1,8 @@
 /**
- * @description tabs相关类型定义
- * @author OceanH
+ * @Description: tabs相关类型定义
+ * @Author: OceanH
+ * @Date: 2023-08-02 22:55:44
  */
-
 export interface TabApi {
   path: string
   name?: string

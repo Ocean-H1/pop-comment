@@ -1,3 +1,8 @@
+<!-- 
+ * @Description: 右键下拉菜单
+ * @Author: OceanH
+ * @Date: 2023-08-02 22:54:04
+!-->
 <template>
   <Transition>
     <div v-show="isShow" class="custom-contextmenu" :style="`top: ${dropdown.y + 5}px; left: ${dropdown.x}px;`">

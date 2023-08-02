@@ -1,6 +1,7 @@
 /**
- * @description tabs相关常量
- * @author OceanH
+ * @Description: tabs相关常量
+ * @Author: OceanH
+ * @Date: 2023-08-02 22:56:02
  */
 import { TDropdownList } from '../interface'
 

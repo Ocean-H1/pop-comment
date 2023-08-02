@@ -1,3 +1,7 @@
+<!-- 
+ * @Author: OceanH
+ * @Date: 2023-08-02 22:53:37
+!-->
 <template>
   <div class="p-tabs">
     <el-scrollbar>
