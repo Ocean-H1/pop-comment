@@ -10,7 +10,9 @@ import testIcon from './components/test-icon.vue'
 import testDivider from './components/test-divider.vue'
 import testAnchor from './components/test-anchor.vue'
 import testTabs from './components/test-tabs.vue'
-const components = [testFold, testCounter, testIcon, testDivider, testAnchor, testTabs]
+import testEditor from './components/test-editor.vue'
+
+const components = [testFold, testCounter, testIcon, testDivider, testAnchor, testTabs, testEditor]
 </script>
 
 <style scoped></style>

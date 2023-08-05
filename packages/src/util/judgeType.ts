@@ -1,5 +1,7 @@
 /**
- * 数据类型判断
+ * @Description: 数据类型判断公共方法
+ * @Author: OceanH
+ * @Date: 2023-08-04 22:13:59
  */
 
 export function isNumber(value: any) {

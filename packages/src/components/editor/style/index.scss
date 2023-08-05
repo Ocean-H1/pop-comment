@@ -1,0 +1,11 @@
+$minHeight: 30 !default;
+$padding: 4px 10px !default;
+
+.p-editor {
+  transition: all 0.3s;
+}
+
+.active {
+  border-color: var(--p-color-primary);
+  background: var(--p-bg-color);
+}

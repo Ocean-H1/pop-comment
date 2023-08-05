@@ -5,5 +5,6 @@ import Icon from './icon'
 import Divider from './divider'
 import Anchor from './anchor'
 import Tabs from './tabs'
+import Editor from './editor'
 
-export default [Fold, Counter, Icon, Divider, Anchor, Tabs] as Plugin[]
+export default [Fold, Counter, Icon, Divider, Anchor, Tabs, Editor] as Plugin[]

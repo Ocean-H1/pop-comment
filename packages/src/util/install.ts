@@ -1,3 +1,8 @@
+/**
+ * @Description: 抽离注册组件公共方法
+ * @Author: OceanH
+ * @Date: 2023-08-04 22:14:27
+ */
 import type { Plugin } from 'vue'
 
 export type SFCWithInstall<T> = T & Plugin
