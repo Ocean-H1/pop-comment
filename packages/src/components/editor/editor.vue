@@ -6,6 +6,7 @@
   <div class="p-editor" :class="{ active: isActive }">
     <div
       ref="editorRef"
+      class="rich-input"
       contenteditable
       :placeholder="placeholder"
       @focus="onFocus"

@@ -3,6 +3,29 @@ $padding: 4px 10px !default;
 
 .p-editor {
   transition: all 0.3s;
+  background: var(--p-bg-color-secondary);
+  border: 1px solid var(--p-bg-color-overlay);
+  color: var(--p-text-color-regular);
+  border-radius: 4px;
+  font-size: 14px;
+
+  .rich-input {
+    min-height: $minHeight;
+    line-height: 22px;
+    padding: $padding;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    resize: both;
+    background-position: 120% -10px;
+    transition: background 0.3s;
+  }
+  .rich-input:empty::before {
+    cursor: text;
+    content: attr(placeholder);
+    color: var(--p-text-color-placeholder);
+  }
 }
 
 .active {
